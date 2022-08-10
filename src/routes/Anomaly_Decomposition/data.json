@@ -1,0 +1,127 @@
+{
+    "name": "World",
+    "children": [
+      {
+        "data": {
+          "name": "Asia"
+        },
+        "children": [
+          {
+           
+              "name": "Southern Asia"
+            
+            
+          },
+          {
+           
+              "name": "Western Asia"
+            
+          },
+          {
+           
+              "name": "South-Eastern Asia"
+            
+          },
+          {
+           
+              "name": "Central Asia"
+            
+          }
+        ]
+      },
+      {
+      
+          "name": "Europe"
+        ,
+        "children": [
+          {
+           
+              "name": "Southern Europe"
+            
+          },
+          {
+           
+              "name": "Western Europe"
+            
+          },
+          {
+           
+              "name": "Eastern Europe"
+            
+          },
+          {
+           
+              "name": "Northern Europe"
+            
+          },
+          {
+           
+              "name": "Western Africa"
+            
+          },
+          {
+           
+              "name": "Southern Africa"
+            
+          },
+          {
+           
+              "name": "Eastern Africa"
+            
+          }
+        ]
+      },
+      {
+
+          "name": "Oceania",
+
+        "children": [
+          {
+    
+              "name": "Polynesia"
+            
+          },
+          {
+    
+              "name": "Australia and New Zealand"
+            
+          },
+          {
+    
+              "name": "Melanesia"
+            
+          },
+          {
+    
+              "name": "Micronesia"
+            
+          }
+        ]
+      },
+      {
+
+          "name": "Latin America",
+
+          "children": [
+            {
+              
+                "name": "Caribbean"
+              
+          },
+          {
+            
+              "name": "South America"
+            
+          },
+          {
+            
+              "name": "Central America"
+            
+          }
+        ]
+      },
+      {
+              "name": "Northern America"
+      }
+    ]
+  }
