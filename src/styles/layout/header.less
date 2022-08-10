@@ -1,6 +1,5 @@
 /* Header Style */
 .ant-layout-header {
-  .box-shadow(@gx-card-shadow-lg);
   .flex-display(flex, row, wrap);
   .align-items(center);
   .justify-content(space-between);
@@ -10,6 +9,8 @@
   position: relative;
   z-index: 10;
   color: @header-text-color;
+  box-shadow: rgb(38 57 77) -8px 15px 13px -15px;
+  border-radius: 5px;
 
   @media screen and (max-width: @screen-md-max) {
     padding: @layout-header-padding-res;

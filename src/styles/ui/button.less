@@ -184,8 +184,30 @@
 }
 
 .ant-radio-group {
+  .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled){
+    color: #703ADA;
+  }
+  
   & .ant-radio-button-wrapper {
     margin-bottom: 6px;
+    border-radius: 7px;
+    margin-left: 10px;
+    background-color: #703ADA;
+    color: @white-color;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  & .ant-radio-button .ant-radio-button-checked:hover{
+    background-color: #c7c7f8 !important;
+    border: none;
+    color: #703ADA !important;
+    font-weight: 500;
+  }
+  & .ant-radio-button-checked {
+    border-radius: 7px;
+    background-color: #C7C7F8;
+    color: red;
+    border: none;
   }
 }
 
