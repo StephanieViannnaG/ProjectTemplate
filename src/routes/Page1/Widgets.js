@@ -1,5 +1,14 @@
 import React from 'react';
 import { Card, Row, Col } from 'antd';
+import AnomaliesOvertime from './Component/AnomaliesOvertime';
+import Message from './Component/Message';
+import Anomalies from './Component/Anomalies';
+import HostAffected from './Component/HostAffected';
+import AnomaliesHost from './Component/AnomaliesHost';
+import AnomalyDetails from './Component/AnomalyDetails';
+import ClarifyTicketDetails from './Component/ClarifyTicketDetails';
+import Feedback from './Feedback';
+import AnomaliesEventtype from './Component/AnomaliesEventtype';
 const Widgets = () => {
   //   const data = '111';
   //   const data1 = '222';
@@ -9,46 +18,70 @@ const Widgets = () => {
         <Col span={14}>
           <Row>
             <Col span={8}>
-              <Card bodyStyle={{ height: 100 }}>111</Card>
+              <Card bodyStyle={{ height: 200 }}>
+                <Message />
+              </Card>
             </Col>
             <Col span={8}>
-              <Card bodyStyle={{ height: 100 }}>111</Card>
+              <Card bodyStyle={{ height: 200 }}>
+                <Anomalies />
+              </Card>
             </Col>
             <Col span={8}>
-              <Card bodyStyle={{ height: 100 }}>111</Card>
+              <Card bodyStyle={{ height: 200 }}>
+                <HostAffected />
+              </Card>
             </Col>
           </Row>
           <Row>
             <Col span={24}>
-              <Card bodyStyle={{ height: 100 }}>111</Card>
+              <Card bodyStyle={{ height: 355 }}>
+                <AnomaliesOvertime />
+              </Card>
             </Col>
           </Row>
         </Col>
         <Col span={10}>
           <Col span={24}>
-            <Card bodyStyle={{ height: 240 }}>111</Card>
+            <Card
+              bodyStyle={{
+                height: 590,
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'space-between'
+              }}>
+              <AnomaliesHost />
+            </Card>
           </Col>
         </Col>
       </Row>
 
       <Row>
         <Col span={16}>
-          <Card>123</Card>
+          <Card>
+            <AnomalyDetails />
+          </Card>
         </Col>
         <Col span={8}>
-          <Card>123</Card>
+          <Card>
+            <AnomaliesEventtype />
+          </Card>
         </Col>
       </Row>
 
       <Row>
         <Col span={24}>
-          <Card>234</Card>
+          <Card>
+            <ClarifyTicketDetails />
+          </Card>
         </Col>
       </Row>
 
       <Row>
         <Col span={24}>
-          <Card>234</Card>
+          <Card>
+            <Feedback />
+          </Card>
         </Col>
       </Row>
     </>
