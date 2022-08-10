@@ -1,0 +1,93 @@
+.ant-layout-sider {
+  background-color: #fff;
+}
+.gx-layout-sider-dark .gx-layout-sider-header {
+  background-color: #fff;
+}
+.ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background-color: #008768;
+  color: #fff;
+}
+.ant-menu-dark .ant-menu-item-selected > span > a {
+  color: #fff !important;
+}
+.ant-menu-dark .ant-menu-item {
+  /* color: #008768; */
+  background-color: #fff;
+}
+.ant-menu-dark .ant-menu-item > span > a {
+  color: #008768;
+}
+.gx-text-green {
+  color: #008768;
+}
+.gx-layout-sider-dark .gx-icon-btn:hover {
+  background-color: #008768;
+  color: #fff !important;
+}
+.ant-menu-dark .ant-menu-item:hover,
+.ant-menu-dark .ant-menu-item-active {
+  background-color: #fff;
+}
+.ant-menu-dark .ant-menu-item:hover > span > a {
+  color: #008768;
+}
+
+a.underline-hover-effect {
+  text-decoration: none;
+  color: inherit;
+}
+
+.underline-hover-effect {
+  display: inline-block;
+  padding-bottom: 0.25rem; /* defines the space between text and underline */
+  position: relative;
+}
+.underline-hover-effect::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #008768;
+  transition: width 0.25s ease-out;
+}
+.underline-hover-effect:hover::before {
+  width: 100%;
+}
+.Header_title {
+  font-size: 18px !important;
+  color: #008768 !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.05px !important;
+}
+.gx-main-content-wrapper {
+  background-color: #f5f6fa !important;
+}
+.ant-empty-img-simple-g {
+  stroke: black;
+}
+.ant-empty-normal {
+  color: black;
+}
+.backward_icon {
+  background-color: #008768;
+  color: #fff;
+  padding: 5px;
+  border-radius: 8px;
+}
+.ant-modal-body {
+  background: #e5ebec;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.ant-modal-header {
+  background: #e5ebec !important;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1) !important;
+}
+.gx-layout-sider-scrollbar {
+  background-color: #fff;
+}
+.gx-layout-sider-scrollbar {
+  background-color: #fff;
+}
