@@ -18,24 +18,24 @@ const Widgets = () => {
         <Col span={14}>
           <Row>
             <Col span={8}>
-              <Card bodyStyle={{ height: 200 }}>
+              <Card className="card-shadow" bodyStyle={{ height: 200 }}>
                 <Message />
               </Card>
             </Col>
             <Col span={8}>
-              <Card bodyStyle={{ height: 200 }}>
+              <Card className="card-shadow" bodyStyle={{ height: 200 }}>
                 <Anomalies />
               </Card>
             </Col>
             <Col span={8}>
-              <Card bodyStyle={{ height: 200 }}>
+              <Card className="card-shadow" bodyStyle={{ height: 200 }}>
                 <HostAffected />
               </Card>
             </Col>
           </Row>
           <Row>
             <Col span={24}>
-              <Card bodyStyle={{ height: 355 }}>
+              <Card className="card-shadow" bodyStyle={{ height: 355 }}>
                 <AnomaliesOvertime />
               </Card>
             </Col>
@@ -44,6 +44,7 @@ const Widgets = () => {
         <Col span={10}>
           <Col span={24}>
             <Card
+              className="card-shadow"
               bodyStyle={{
                 height: 590,
                 display: 'flex',
@@ -58,12 +59,12 @@ const Widgets = () => {
 
       <Row>
         <Col span={16}>
-          <Card>
+          <Card className="card-shadow">
             <AnomalyDetails />
           </Card>
         </Col>
         <Col span={8}>
-          <Card>
+          <Card className="card-shadow">
             <AnomaliesEventtype />
           </Card>
         </Col>
@@ -71,7 +72,7 @@ const Widgets = () => {
 
       <Row>
         <Col span={24}>
-          <Card>
+          <Card className="card-shadow">
             <ClarifyTicketDetails />
           </Card>
         </Col>
@@ -79,7 +80,7 @@ const Widgets = () => {
 
       <Row>
         <Col span={24}>
-          <Card>
+          <Card className="card-shadow">
             <Feedback />
           </Card>
         </Col>

@@ -1,0 +1,11 @@
+.ant-card.ant-card-bordered.card-shadow{
+    box-shadow: rgb(198 178 240) 0px 10px 15px;
+}
+
+.ant-radio-group.ant-radio-group-outline.vendor-radio-button {
+    float: right;
+}
+
+.flex-dir-rev{
+    flex-direction: row-reverse;
+}

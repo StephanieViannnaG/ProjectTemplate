@@ -1,7 +1,7 @@
 {
   "app.announced": "A new version will be released on December 25th. Stay tuned!",
   "sidebar.main": "Main",
-  "sidebar.AnomalyDescription":"AnomalyDescription",
+  "sidebar.AnomalyDecomposition":"Anomaly Decomposition",
   "sidebar.samplePage": "Sample Page",
   "sidebar.Transims": "Transims",
   "sidebar.Gtfs": "Gtfs",
