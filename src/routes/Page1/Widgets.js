@@ -18,17 +18,29 @@ const Widgets = () => {
         <Col span={14}>
           <Row>
             <Col span={8}>
-              <Card bodyStyle={{ height: 200 }}>
+              <Card
+                title={`Message
+        
+        20M`}
+                bodyStyle={{ height: 150 }}>
                 <Message />
               </Card>
             </Col>
             <Col span={8}>
-              <Card bodyStyle={{ height: 200 }}>
+              <Card
+                title={`Anamolies
+        
+        1878`}
+                bodyStyle={{ height: 150 }}>
                 <Anomalies />
               </Card>
             </Col>
             <Col span={8}>
-              <Card bodyStyle={{ height: 200 }}>
+              <Card
+                title={`Host Affected
+        
+        89`}
+                bodyStyle={{ height: 150 }}>
                 <HostAffected />
               </Card>
             </Col>
@@ -42,17 +54,16 @@ const Widgets = () => {
           </Row>
         </Col>
         <Col span={10}>
-          <Col span={24}>
-            <Card
-              bodyStyle={{
-                height: 590,
-                display: 'flex',
-                flexDirection: 'row',
-                justifyContent: 'space-between'
-              }}>
-              <AnomaliesHost />
-            </Card>
-          </Col>
+          <Card
+            bodyStyle={{
+              height: 590,
+              display: 'flex',
+              flexDirection: 'row',
+              padding: '15px',
+              justifyContent: 'space-between'
+            }}>
+            <AnomaliesHost />
+          </Card>
         </Col>
       </Row>
 

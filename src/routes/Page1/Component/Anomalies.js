@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { LineChart, Line } from 'recharts';
+import { LineChart, Line, ResponsiveContainer } from 'recharts';
 
 const data = [
   {
@@ -31,14 +31,11 @@ const data = [
 export default function Anomalies() {
   return (
     <>
-      <h3 style={{ marginLeft: '60px' }}>Anamolies</h3>
-      <h2 style={{ marginLeft: '60px' }}>1878</h2>
-
-      <div style={{ marginTop: '20px' }}>
+      <ResponsiveContainer width={'100%'} height={'70%'}>
         <LineChart width={200} height={100} data={data}>
           <Line type="monotone" dataKey="pv" stroke="#8884d8" strokeWidth={2} />
         </LineChart>
-      </div>
+      </ResponsiveContainer>
     </>
   );
 }

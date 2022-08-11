@@ -1,6 +1,7 @@
 import { Card } from 'antd';
 import React from 'react';
 import { BarChart, Bar, ResponsiveContainer } from 'recharts';
+import '../Page1.css';
 
 const data = [
   {
@@ -50,22 +51,21 @@ const data2 = [
 export default function AnomaliesHost() {
   return (
     <>
-      {/* <h3>Anamolies by Host Type</h3> */}
-
       <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <h3>Anamolies by Host Type</h3>
         {data2.map((item) => {
           return (
             <>
               <Card
                 style={{
-                  height: '100px',
+                  height: '85px',
                   width: '180px',
-                  justifyContent: 'center'
-                }}>
-                <div style={{ marginBottom: '20px' }}>
-                  <h2>{item.percentage}</h2>
-                  <h3>{item.text}</h3>
-                </div>
+                  justifyContent: 'center',
+                  marginLeft: '20px'
+                }}
+                className="card">
+                <h3 style={{ padding: '0', margin: '0' }}>{item.percentage}</h3>
+                <h5 style={{ padding: '0', margin: '0' }}>{item.text}</h5>
               </Card>
             </>
           );
@@ -77,7 +77,7 @@ export default function AnomaliesHost() {
           margin={{
             top: 80,
             right: 30,
-            left: 70,
+            left: 10,
             bottom: 50
           }}>
           <Bar dataKey="pv" stackId="a" fill="#8884d8" />

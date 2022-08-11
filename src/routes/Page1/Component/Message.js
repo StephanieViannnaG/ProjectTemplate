@@ -31,14 +31,10 @@ const data = [
 export default function Message() {
   return (
     <>
-      <h3 style={{ marginLeft: '60px' }}>Message</h3>
-      <h2 style={{ marginLeft: '60px' }}>20M</h2>
-      <ResponsiveContainer>
-        <div style={{ marginTop: '20px' }}>
-          <LineChart width={200} height={100} data={data}>
-            <Line type="monotone" dataKey="pv" stroke="#8884d8" strokeWidth={2} />
-          </LineChart>
-        </div>
+      <ResponsiveContainer width={'100%'} height={'70%'}>
+        <LineChart width={200} height={100} data={data}>
+          <Line type="monotone" dataKey="pv" stroke="#8884d8" strokeWidth={2} />
+        </LineChart>
       </ResponsiveContainer>
     </>
   );
