@@ -11,16 +11,24 @@ export default function AnomaliesEventtype() {
   return (
     <>
       <h3>Anomalies by event Type</h3>
-      <div style={{ width: '100%', height: 290 }}>
+      <div style={{ width: '100%', height: 310 }}>
         <ResponsiveContainer>
           <PieChart>
             <Pie dataKey="value" data={data} fill="#8884d8" />
           </PieChart>
         </ResponsiveContainer>
       </div>
-      <h4>Linkdown</h4>
-      <h4>Digital diagnostic Monitor Failure</h4>
-      <h4>Others</h4>
+      <ul>
+        <li>
+          <h5>Linkdown</h5>
+        </li>
+        <li>
+          <h5>Digital diagnostic Monitor Failure</h5>
+        </li>
+        <li>
+          <h5>Others</h5>
+        </li>
+      </ul>
     </>
   );
 }

@@ -18,24 +18,24 @@ const Widgets = () => {
         <Col span={14}>
           <Row>
             <Col span={8}>
-              <Card className="card-shadow" bodyStyle={{ height: 200 }}>
+              <Card className="card-shadow" title={`Message 20M`} bodyStyle={{ height: 150 }}>
                 <Message />
               </Card>
             </Col>
             <Col span={8}>
-              <Card className="card-shadow" bodyStyle={{ height: 200 }}>
+              <Card className="card-shadow" title={`Anamolies 1878`} bodyStyle={{ height: 150 }}>
                 <Anomalies />
               </Card>
             </Col>
             <Col span={8}>
-              <Card className="card-shadow" bodyStyle={{ height: 200 }}>
+              <Card className="card-shadow" title={`Host Affected 89`} bodyStyle={{ height: 150 }}>
                 <HostAffected />
               </Card>
             </Col>
           </Row>
           <Row>
             <Col span={24}>
-              <Card className="card-shadow" bodyStyle={{ height: 355 }}>
+              <Card className="card-shadow" bodyStyle={{ height: 355 }} title="Anamolies Over time">
                 <AnomaliesOvertime />
               </Card>
             </Col>
@@ -44,6 +44,7 @@ const Widgets = () => {
         <Col span={10}>
           <Col span={24}>
             <Card
+              title="Anamolies by Host Type"
               className="card-shadow"
               bodyStyle={{
                 height: 590,
@@ -59,12 +60,12 @@ const Widgets = () => {
 
       <Row>
         <Col span={16}>
-          <Card className="card-shadow">
+          <Card className="card-shadow" title="Anomaly Details">
             <AnomalyDetails />
           </Card>
         </Col>
         <Col span={8}>
-          <Card className="card-shadow">
+          <Card className="card-shadow" title="Anomalies by event Type">
             <AnomaliesEventtype />
           </Card>
         </Col>
@@ -72,7 +73,7 @@ const Widgets = () => {
 
       <Row>
         <Col span={24}>
-          <Card className="card-shadow">
+          <Card className="card-shadow" title="Clarify Ticket Details">
             <ClarifyTicketDetails />
           </Card>
         </Col>
@@ -80,7 +81,7 @@ const Widgets = () => {
 
       <Row>
         <Col span={24}>
-          <Card className="card-shadow">
+          <Card className="card-shadow" title="Feedback">
             <Feedback />
           </Card>
         </Col>
