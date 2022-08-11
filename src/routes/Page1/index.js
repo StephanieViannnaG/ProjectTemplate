@@ -16,16 +16,16 @@ const index = () => {
 
   const options = [
     {
-      label: 'Apple',
-      value: 'Apple'
+      label: 'Vendor1',
+      value: 'Vendor1'
     },
     {
-      label: 'Pear',
-      value: 'Pear'
+      label: 'Vendor2',
+      value: 'Vendor2'
     },
     {
-      label: 'Orange',
-      value: 'Orange'
+      label: 'Vendor3',
+      value: 'Vendor3'
     }
   ];
 

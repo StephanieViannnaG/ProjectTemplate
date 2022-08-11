@@ -52,7 +52,7 @@ export default function AnomaliesHost() {
   return (
     <>
       <div style={{ display: 'flex', flexDirection: 'column' }}>
-        <h3>Anamolies by Host Type</h3>
+        {/* <h3>Anamolies by Host Type</h3> */}
         {data2.map((item) => {
           return (
             <>

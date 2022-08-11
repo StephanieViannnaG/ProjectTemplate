@@ -274,7 +274,7 @@ const data = [
 export default function AnomaliesOvertime() {
   return (
     <>
-      <h3>Anamolies Over time</h3>
+      {/* <h3>Anamolies Over time</h3> */}
       <ResponsiveContainer width="100%" height="80%">
         <BarChart
           data={data}

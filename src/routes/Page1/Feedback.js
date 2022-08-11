@@ -47,7 +47,7 @@ const columns = [
 export default function Feedback() {
   return (
     <>
-      <h3>Feedback</h3>
+      {/* <h3>Feedback</h3> */}
       <div>
         <BootstrapTable bootstrap4 keyField="id" data={products} columns={columns} />
       </div>

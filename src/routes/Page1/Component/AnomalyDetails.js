@@ -52,7 +52,7 @@ export default function AnomalyDetails() {
           justifyContent: 'space-between',
           padding: '0 10px 0 0 '
         }}>
-        <h3>Anomaly Details </h3>
+        {/* <h3>Anomaly Details </h3> */}
         <div>
           <Button type="primary">
             <i className="fas fa-share-alt" />

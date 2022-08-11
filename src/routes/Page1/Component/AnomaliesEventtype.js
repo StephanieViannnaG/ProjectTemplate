@@ -10,7 +10,7 @@ const data = [
 export default function AnomaliesEventtype() {
   return (
     <>
-      <h3>Anomalies by event Type</h3>
+      {/* <h3>Anomalies by event Type</h3> */}
       <div style={{ width: '100%', height: 310 }}>
         <ResponsiveContainer>
           <PieChart>

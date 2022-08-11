@@ -43,7 +43,7 @@ const columns = [
 export default function ClarifyTicketDetails() {
   return (
     <>
-      <h3>Clarify Ticket Details</h3>
+      {/* <h3>Clarify Ticket Details</h3> */}
       <div>
         <BootstrapTable bootstrap4 keyField="id" data={products} columns={columns} />
       </div>
