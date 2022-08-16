@@ -9,3 +9,42 @@ i.fas.fa-share-alt {
 i.fab.fa-searchengin{
   font-size: 30px;
 }
+.count-style{
+  font-weight: 900;
+  font-size: 22px;
+  color: #703ADA;
+}
+.widget-content {
+  line-height: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.last-updated-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 22px 0px;
+}
+.recharts-responsive-container.piechart-float-rgt {
+  float: right;
+}
+.align-buttons{
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  align-items: stretch;
+}
+.modal-legend-sub {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+.ant-card.ant-card-bordered.card-shadow.card-border{
+  border: 5px solid #703adc;
+  border-bottom: none;
+  border-right: none;
+  border-top: none;
+}

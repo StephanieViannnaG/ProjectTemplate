@@ -1,88 +1,60 @@
 import React from 'react';
 import { Card, Row, Col } from 'antd';
-import AnomaliesOvertime from './Component/AnomaliesOvertime';
-import Message from './Component/Message';
-import Anomalies from './Component/Anomalies';
-import HostAffected from './Component/HostAffected';
-import AnomaliesHost from './Component/AnomaliesHost';
-import AnomalyDetails from './Component/AnomalyDetails';
-import ClarifyTicketDetails from './Component/ClarifyTicketDetails';
-import Feedback from './Feedback';
-import AnomaliesEventtype from './Component/AnomaliesEventtype';
+import SmallCards from './Component/SmallCards';
+import AnomalyDistributionChart from './Component/AnomalyDistributionChart';
+import DistributionHostType from './Component/DistributionHostType';
+import MapView from './Component/MapView';
+
 const Widgets = () => {
-  //   const data = '111';
-  //   const data1 = '222';
   return (
     <>
       <Row>
-        <Col span={14}>
-          <Row>
-            <Col span={8}>
-              <Card className="card-shadow" title={`Message 20M`} bodyStyle={{ height: 150 }}>
-                <Message />
-              </Card>
-            </Col>
-            <Col span={8}>
-              <Card className="card-shadow" title={`Anamolies 1878`} bodyStyle={{ height: 150 }}>
-                <Anomalies />
-              </Card>
-            </Col>
-            <Col span={8}>
-              <Card className="card-shadow" title={`Host Affected 89`} bodyStyle={{ height: 150 }}>
-                <HostAffected />
-              </Card>
-            </Col>
-          </Row>
-          <Row>
-            <Col span={24}>
-              <Card className="card-shadow" bodyStyle={{ height: 355 }} title="Anamolies Over time">
-                <AnomaliesOvertime />
-              </Card>
-            </Col>
-          </Row>
+        <Col span={5}>
+          <Card className="card-shadow card-border" bodyStyle={{ height: 100 }}>
+            <SmallCards count="20M" content="Message" />
+          </Card>
         </Col>
+        <Col span={5}>
+          <Card className="card-shadow card-border" bodyStyle={{ height: 100 }}>
+            <SmallCards count="3241" content="Anomalies" />
+          </Card>
+        </Col>
+        <Col span={5}>
+          <Card className="card-shadow card-border" bodyStyle={{ height: 100 }}>
+            <SmallCards count="162" content="Host Affected" />
+          </Card>
+        </Col>
+        <Col span={5}>
+          <Card className="card-shadow card-border" bodyStyle={{ height: 100 }}>
+            <SmallCards count="2" content="Rare Events" />
+          </Card>
+        </Col>
+        <Col span={4}>
+          <div className="last-updated-content">
+            <div>Last Updated</div>
+            <div>Date and Time</div>
+          </div>
+        </Col>
+      </Row>
+
+      <Row>
         <Col span={10}>
-          <Col span={24}>
-            <Card
-              title="Anamolies by Host Type"
-              className="card-shadow"
-              bodyStyle={{
-                height: 590,
-                display: 'flex',
-                flexDirection: 'row',
-                justifyContent: 'space-between'
-              }}>
-              <AnomaliesHost />
-            </Card>
-          </Col>
+          <DistributionHostType title="Messsage Distribution by Host Type" />
+        </Col>
+        <Col span={14}>
+          <MapView />
         </Col>
       </Row>
 
       <Row>
-        <Col span={16}>
-          <Card className="card-shadow" title="Anomaly Details">
-            <AnomalyDetails />
+        <Col span={12}>
+          <Card className="card-shadow" title="Anomaly Distribution by Event">
+            <AnomalyDistributionChart />
           </Card>
         </Col>
-        <Col span={8}>
-          <Card className="card-shadow" title="Anomalies by event Type">
-            <AnomaliesEventtype />
-          </Card>
-        </Col>
-      </Row>
-
-      <Row>
-        <Col span={24}>
-          <Card className="card-shadow" title="Clarify Ticket Details">
-            <ClarifyTicketDetails />
-          </Card>
-        </Col>
-      </Row>
-
-      <Row>
-        <Col span={24}>
-          <Card className="card-shadow" title="Feedback">
-            <Feedback />
+        <Col span={12}>
+          <Card className="card-shadow" title="Top 10 Hosts">
+            <AnomalyDistributionChart />
           </Card>
         </Col>
       </Row>
