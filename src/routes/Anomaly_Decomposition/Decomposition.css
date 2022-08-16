@@ -1,0 +1,25 @@
+.node__root > circle {
+    fill:  #2BAE66FF;
+    r:25;
+  }
+  
+  .node__branch > circle {
+    fill:  #2BAE66FF;
+    r:25;
+  }
+  
+  .node__leaf > circle {
+    fill: white;
+    r:25;
+
+  }
+
+  .node_path{
+         stroke: 'red';
+         stroke-width: "20px",
+  }
+
+  .link__to-branch{
+    stroke: 'pink';
+    stroke-width: "20px",
+  }

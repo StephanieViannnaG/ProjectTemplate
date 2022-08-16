@@ -43,11 +43,11 @@ const SidebarContent = ({ sidebarCollapsed, setSidebarCollapsed }) => {
             selectedKeys={[selectedKeys]}
             theme={themeType === THEME_TYPE_LITE ? 'lite' : 'dark'}
             mode="inline">
-            <Menu.Item key="Page1" className="underline-hover-effect">
-              <Link to="/Page1">
+            <Menu.Item key="DashBoard" className="underline-hover-effect">
+              <Link to="/DashBoard">
                 <i className="icon fas fa-route"></i>
                 <span>
-                  <IntlMessages id="sidebar.Page1" />
+                  <IntlMessages id="sidebar.DashBoard" />
                 </span>
               </Link>
             </Menu.Item>
@@ -56,6 +56,22 @@ const SidebarContent = ({ sidebarCollapsed, setSidebarCollapsed }) => {
                 <i className="icon fas fa-route"></i>
                 <span>
                   <IntlMessages id="sidebar.AnomalyDecomposition" />
+                </span>
+              </Link>
+            </Menu.Item>
+            <Menu.Item key="Trends" className="underline-hover-effect">
+              <Link to="/Trends">
+                <i className="icon fas fa-route"></i>
+                <span>
+                  <IntlMessages id="sidebar.Trends" />
+                </span>
+              </Link>
+            </Menu.Item>
+            <Menu.Item key="Anomaly_Details" className="underline-hover-effect">
+              <Link to="/Anomaly_Details">
+                <i className="icon fas fa-route"></i>
+                <span>
+                  <IntlMessages id="sidebar.AnomalyDetails" />
                 </span>
               </Link>
             </Menu.Item>
