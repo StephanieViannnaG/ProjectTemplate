@@ -6,13 +6,13 @@ i.fas.fa-share-alt {
   font-size: 20px;
   margin-right: 10px;
 }
-i.fab.fa-searchengin{
+i.fab.fa-searchengin {
   font-size: 30px;
 }
-.count-style{
+.count-style {
   font-weight: 900;
   font-size: 22px;
-  color: #703ADA;
+  color: #703ada;
 }
 .widget-content {
   line-height: 2rem;
@@ -29,7 +29,7 @@ i.fab.fa-searchengin{
 .recharts-responsive-container.piechart-float-rgt {
   float: right;
 }
-.align-buttons{
+.align-buttons {
   display: flex;
   flex-direction: column;
   align-content: space-around;
@@ -42,9 +42,10 @@ i.fab.fa-searchengin{
   align-items: center;
   font-size: 10px;
 }
-.ant-card.ant-card-bordered.card-shadow.card-border{
+.ant-card.ant-card-bordered.card-shadow.card-border {
   border: 5px solid #703adc;
   border-bottom: none;
   border-right: none;
   border-top: none;
 }
+

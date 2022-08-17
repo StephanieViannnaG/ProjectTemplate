@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, Row, Col } from 'antd';
 import { MessageOT, AnomalyOT, HostAffectedOT } from './Components';
+import '../Trends/Components/global.css';
 const Trends = () => {
   return (
     <>
@@ -11,7 +12,27 @@ const Trends = () => {
           </Card>
         </Col>
         <Col span={24}>
-          <Card className="card-shadow" title={`Anomaly Over Time`}>
+          <Card
+            className="card-shadow"
+            title={
+              <div
+                style={{
+                  display: 'flex',
+                  fontSize: '20px',
+                  justifyContent: 'space-between',
+                  flexDirection: 'row'
+                }}>
+                <p className="card-title">Anomaly Over Time</p>
+
+                <div>
+                  <i className="fal fa-thumbtack pin"></i>
+                  <i className="fal fa-copy pin"></i>
+                  <i className="fal fa-filter pin" />
+                  <i className="fal fa-external-link-alt pin"></i>
+                  <i className="fal fa-ellipsis-h pin"></i>
+                </div>
+              </div>
+            }>
             <AnomalyOT />
           </Card>
         </Col>
