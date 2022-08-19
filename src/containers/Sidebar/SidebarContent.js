@@ -43,11 +43,11 @@ const SidebarContent = ({ sidebarCollapsed, setSidebarCollapsed }) => {
             selectedKeys={[selectedKeys]}
             theme={themeType === THEME_TYPE_LITE ? 'lite' : 'dark'}
             mode="inline">
-            <Menu.Item key="DashBoard" className="underline-hover-effect">
-              <Link to="/DashBoard">
+            <Menu.Item key="Page1" className="underline-hover-effect">
+              <Link to="/Page1">
                 <i className="icon fas fa-route"></i>
                 <span>
-                  <IntlMessages id="sidebar.DashBoard" />
+                  <IntlMessages id="sidebar.Page1" />
                 </span>
               </Link>
             </Menu.Item>
