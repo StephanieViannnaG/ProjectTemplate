@@ -29,3 +29,13 @@ p {
 .recharts-wrapper .recharts-cartesian-grid-horizontal line:last-child {
   stroke-opacity: 0;
 }
+.pin{
+  margin-right: 10px;
+}
+.card-shadow{
+  box-shadow: rgb(198 178 240) 0px 10px 15px;
+}
+.card-title{
+  font-weight: 400;
+  font-size: 16px;
+}
