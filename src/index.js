@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
 import NextApp from './NextApp';
 import * as serviceWorker from './registerServiceWorker';
 import 'react-app-polyfill/ie11';
